@@ -18,7 +18,7 @@ jobs:
       - name: Create zip file for lambda Function
         run: cd src && zip -r code.zip .
       - name: AWS CLI v2
-        uses: ----
+        uses: mithilgupta/actions-awscli-v2@latest
         with:
           args: "lambda update-function-code \
           --function-name arn:aws:lambda:us-west-2:532284260787:function:Test_scraper_CICD_01 \
