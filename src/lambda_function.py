@@ -11,5 +11,5 @@ def lambda_handler(event, context):
     }
 
 
-
-# This is a test code.
+if __name__ == "__main__":
+	print (lambda_handler({},{}))
