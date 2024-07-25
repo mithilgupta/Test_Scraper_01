@@ -20,7 +20,7 @@ jobs:
       - name: AWS CLI v2
         uses: imehedi/actions-awscli-v2@v1.0.19
         with:
-          args: "aws lambda update-function-code \
+          args: "lambda update-function-code \
           --function-name arn:aws:lambda:us-west-2:532284260787:function:Test_scraper_CICD_01 \
           --zip-file fileb://src/code.zip"
 
